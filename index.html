@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="shortcut icon" href="./Multimedia/Favicos La Limena.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./Multimedia/Logo La Limena.png" alt="Logo_la_limena" style="height: auto">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-list menuhamb" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Master Plan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="grid_main">
+        <section class="hero">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="./Multimedia/Imagen general con logo.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="./Multimedia/Pasto y cortina.png" class="d-block w-100" alt="pasto y cortina">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Multimedia/Iluminacion nocturna.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <h1 class="text_hero">Vive en la ciudad, Con aire de campo</h1>
+            <a href="https://wa.link/ka6pfl" class="whatsapp_button">CONTACTAR UN ASESOR</a>
+        </section>
+        <section class="video">
+            <h1>Conoce La Limeña</h1>
+            <iframe
+                src="https://www.youtube.com/embed/bkt012s6ZvU?autoplay=0&loop=1&playlist=bkt012s6ZvU&controls=0&start=34&mute=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen
+                style="width: 100%; height: calc(100vw * 9 / 16);">
+            </iframe>
+        </section>
+        <section class="thumbindex">
+            <h1>Conoce La Limeña</h1>
+            <ul>
+                <li>
+                    <img src="./Multimedia/Pasto y cortina.png" alt="pasto_y_cortina_la_limena">
+                    <h3>Titulo</h3>
+                    <p>Bajada</p>
+                </li>
+                <li>
+                    <img src="./Multimedia/Imagen general con logo.png" alt="vista_general">
+                    <h3>Titulo</h3>
+                    <p>Bajada</p>
+                </li>
+                <li>
+                    <img src="./Multimedia/Iluminacion nocturna.png" alt="vista_calle_nocturna">
+                    <h3>Titulo</h3>
+                    <p>Bajada</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="menufooter grid_footer">
+        <Div>
+            <a href="#"><img src="./Multimedia/Logo La Limena.png" alt="Logo La Limena"></a>
+        </Div>
+        <div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="./pages/productos.html">Productos</a></li>
+                <li><a href="./pages/master-plan.html">Master Plan</a></li>
+                <li><a href="./pages/galeria.html">Galeria</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
