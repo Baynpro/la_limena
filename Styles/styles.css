@@ -101,7 +101,7 @@ padding-right: 5%;
 }
 
 .menuhamb{
-    width: 32px;  /* O el tamaño que prefieras */
+    width: 32px; 
     height: 32px;
     fill:#BDC459;
 }
@@ -118,8 +118,8 @@ padding-right: 5%;
 }
 
 .navbar-toggler:focus {
-    outline: none; /* Quita el contorno de enfoque predeterminado */
-    box-shadow: none; /* Quita la sombra de caja que podría estar causando el recuadro */
+    outline: none; 
+    box-shadow: none; 
 }
 
 .navbar-toggler{
@@ -182,16 +182,23 @@ main {
 
 }
 
+.carousel {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    max-height: 500px;
+    
+}
 .carousel-inner{
     width: 100%;
     height: 50%;
+    max-height: 550px;
     border: none;
 }
 
 .carousel-item img {
     position: relative;
-    height: auto;
-    /* border: none; */
+    height: inherit;
     overflow:hidden;
 }
 
