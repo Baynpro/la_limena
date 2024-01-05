@@ -21,6 +21,14 @@ h1 {
     padding-bottom: 2rem;
 }
 
+@media (max-width:500px) {
+h1{
+    font-size: 28px;
+}
+
+
+}
+
 h2 {
     display: flex;
     align-items: center;
@@ -50,8 +58,17 @@ p {
     background-color: #818944;
     border-bottom: 2px solid #5F6629;
     box-shadow: 0px 4px 8px 0px rgba(80, 78, 78, 0.5);
+    max-height: 100px;
+
 }
 
+@media (max-width: 760px) { 
+    .navbar {
+max-height: 80px;
+
+
+    }
+}
 .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -63,7 +80,7 @@ padding-right: 5%;
 
 }
 
-@media (max-width: 991px) { 
+@media (max-width: 860px) { 
     .navbar-nav {
         text-align: right; 
     }
@@ -76,8 +93,8 @@ padding-right: 5%;
 .navbar-brand img {
     max-width: 260px;
     min-width: 140px;
-    width: 24vw;
-    max-height: 140px;
+    width: 18vw;
+    /* max-height: 140px; */
     vertical-align: middle;
     align-items: center;
 }
@@ -99,6 +116,32 @@ padding-right: 5%;
     color: #ff7f50;
     font-weight: 400;
 }
+
+.whatsapp_button {
+    margin-top: 40%;
+    display: inline-block;
+    position: absolute;
+    background-color: #E6772F;
+    color: white;
+    padding:2vh 4vw;
+    border-radius: 1px;
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+@media (max-width: 860px) { 
+    .whatsapp_button {
+        font-size: 13px; 
+        padding: 14px 32px;
+        margin-top: 48%;
+    }
+}
+.whatsapp_button:hover {
+    background-color: #9b4d19;
+}
+
+
 
 .menuhamb{
     width: 32px; 
@@ -151,7 +194,7 @@ width: 200px;
 }
 
 .offcanvas-body {
-    background-color:#5F6629;
+    background-color:#818944;
     
 }
 
@@ -186,7 +229,7 @@ main {
     position: relative;
     width: 100vw;
     height: auto;
-    max-height: 500px;
+    max-height: 600px;
     
 }
 .carousel-inner{
@@ -202,19 +245,31 @@ main {
     overflow:hidden;
 }
 
+@media (max-width: 420px) {
+    .carousel-item img{ 
+        max-height: 45vh;
+
+    }
+
+}
+
+
+
+
 .text_hero {
     position: absolute;
     font-size: 5vw;
     max-width: 1150px;
     width: auto;
     overflow: hidden;
-    padding-top: 20%;
-    color:#BDC459;
+    padding-top: 18%;
+    color:#5F6629;
 }
 
 @media (max-width: 600px) { 
     .text_hero {
-        font-size: 24px; 
+        font-size: 32px; 
+        padding: 15% 10vw;
     }
 }
 
@@ -228,28 +283,6 @@ main {
 
 }
 
-.whatsapp_button {
-    margin-top: 68%;
-    display: inline-block;
-    position: absolute;
-    background-color: #E6772F;
-    color: white;
-    padding:2vh 4vw;
-    border-radius: 1px;
-    text-decoration: none;
-    font-size: 1.5vw;
-    font-weight: 500;
-}
-
-@media (max-width: 720px) { /* Ajusta según tus necesidades */
-    .whatsapp_button {
-        font-size: 10px; /* Tamaño mínimo en pantallas pequeñas */
-        padding:8px 16px;
-    }
-}
-.whatsapp_button:hover {
-    background-color: #9b4d19;
-}
 
 
 
