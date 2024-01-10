@@ -5,15 +5,13 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: auto;
+    max-width: 1400px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #BDC459;
-    z-index: -1;
+    border: solid redsass 
+    1px;
 }
 
 h1 {
@@ -63,53 +61,31 @@ p {
 
 header{
     z-index: 1000;
-    height: 100%;
-    position:static;  
-    width: 100vw;
-    max-height: 100px; 
-    background-color: #818944;
-    border-bottom: 2px solid #5F6629;
-    box-shadow: 0px 4px 8px 0px rgba(196, 207, 189, 0.758); 
-}
-
-@media (max-width: 760px) {
-    header {
-        max-height: 80px;
-
-
-    }
+    
 }
 
 .navbar {
-
-    max-height:inherit;
+    background-color: #818944;
+    border-bottom: 2px solid #5F6629;
+    box-shadow: 0px 4px 8px 0px rgba(80, 78, 78, 0.5);
+    max-height: 100px;
 
 }
 
-/* @media (max-width: 760px) {
+@media (max-width: 760px) {
     .navbar {
         max-height: 80px;
 
 
     }
-} */
+}
 
 .container-fluid {
-    /* padding-right: 0;
-    padding-left: 0; */
-    /* background-color: #818944; */
+    padding-right: 0;
+    padding-left: 0;
+    background-color: #818944;
 }
 
-.navbar-brand img {
-    /* max-width: 260px; */
-    /* min-width: 140px;
-    width: 18vw; */
-    /* max-height: 140px; */
-    height: 9vh;
-    max-height: inherit;
-    vertical-align: middle;
-    align-items: center;
-}
 .navbar-nav {
     padding-right: 5%;
 
@@ -124,6 +100,15 @@ header{
         display: block;
         padding-right: 15px;
     }
+}
+
+.navbar-brand img {
+    max-width: 260px;
+    min-width: 140px;
+    width: 18vw;
+    /* max-height: 140px; */
+    vertical-align: middle;
+    align-items: center;
 }
 
 .nav-link {
@@ -145,6 +130,55 @@ header{
 }
 
 
+.text_hero {
+    position: absolute;
+    font-size: 5vw;
+    max-width: 1150px;
+    width: auto;
+    overflow: hidden;
+    padding-top: 15%;
+    color: #BDC459;
+}
+
+@media (max-width: 768px) {
+    .text_hero {
+        font-size: 32px;
+        padding: 12% 20vw;
+        
+    }
+}
+
+@media (max-width: 599px) {
+    .text_hero {
+        display: none;
+    }
+}
+
+.text_sm {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 12% 20vw;
+
+}
+
+.text_hero_sm {
+    overflow: hidden;
+    width: auto;
+    font-size: 26px;
+    padding: 0 0;
+    color: #BDC459;
+    
+}
+
+@media (min-width: 600px) {
+    .text_sm {
+        display: none;
+
+    }
+
+
+}
 
 .whatsapp_button {
     margin-top: 28%;
@@ -238,7 +272,7 @@ main {
     flex-direction: column;
     align-content: center;
     background-color: #BDC459;
-    max-width: 1200px;
+    max-width: 1300px;
     width: 100%;
     padding-top: 6px;
     padding-bottom: 128px;
@@ -258,56 +292,7 @@ main {
     align-items: center;
     width: 100%;
     height: 100%;
-    max-width: inherit;
 
-}
-
-.text_hero {
-    position: absolute;
-    font-size: 5vw;
-    max-width: 1150px;
-    width: auto;
-    overflow: hidden;
-    padding-top: 15%;
-    color: #BDC459;
-}
-
-@media (max-width: 768px) {
-    .text_hero {
-        font-size: 32px;
-        padding: 12% 20vw;
-        
-    }
-}
-
-@media (max-width: 599px) {
-    .text_hero {
-        display: none;
-    }
-}
-
-.text_sm {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    padding: 12% 20vw;
-
-}
-
-.text_hero_sm {
-    overflow: hidden;
-    width: auto;
-    font-size: 26px;
-    padding: 0 0;
-    color: #BDC459;
-    
-}
-
-@media (min-width: 600px) {
-    .text_sm {
-        display: none;
-
-    }
 }
 
 .carousel {
@@ -583,7 +568,7 @@ footer {
     align-items: start;
     /* gap: 2rem; */
     background-color: #818944;
-    width: 100vw;
+    width: auto;
     height: 360px;
 }
 
