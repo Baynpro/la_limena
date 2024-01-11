@@ -236,6 +236,10 @@ main {
 
 }
 
+section{
+    max-width: inherit;
+}
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -386,7 +390,7 @@ main {
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding: 2rem 96px;
+        padding: 0.5rem 36px;
         vertical-align: top;
 
     }
@@ -586,10 +590,9 @@ main {
         display: flex;
         flex-direction: column;
         align-items: start;
-        /* gap: 2rem; */
         background-color: #818944;
         width: 100vw;
-        height: 360px;
+        height: 400px;
     }
 
     .footer_content {
@@ -601,7 +604,7 @@ main {
 
     }
 
-    @media (max-width:600px) {
+    @media (max-width:680px) {
         .footer_content {
             flex-direction: column-reverse;
             align-items: start;
