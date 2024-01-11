@@ -28,6 +28,7 @@ h1 {
 @media (max-width:500px) {
     h1 {
         font-size: 26px;
+        width: 100%;
     }
 
 
@@ -136,7 +137,7 @@ header {
 
 
 .whatsapp_button {
-    margin-top: 28%;
+    margin-top: 35%;
     display: inline-block;
     position: absolute;
     background-color: #E6772F;
@@ -226,6 +227,7 @@ main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
     align-content: center;
     max-width: 1250px;
     width: 100%;
@@ -250,7 +252,7 @@ main {
     max-width: 1150px;
     width: auto;
     overflow: hidden;
-    padding-top: 15%;
+    padding-top: 18%;
     color: #BDC459;
 }
 
@@ -403,7 +405,7 @@ main {
     .master_img img {
 
         max-width: 830px;
-        width: 70vw;
+        width: 86vw;
     }
 }
 
@@ -422,10 +424,10 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        margin-top: 2rem;
-        margin-left: 4rem;
-        padding-right: 6rem;
-
+        margin-top: 1rem;
+        margin-left: 1rem;
+        padding-right: 5rem;
+    }
 
     }
 
@@ -456,11 +458,22 @@ main {
     }
 
     .galeria_img li img {
-        width: 400px;
+        width: 350px;
         height: auto;
+        margin:6px;
         margin-bottom: 1rem;
 
     }
+
+    @media (max-width: 787px) {
+        .galeria_img li img {
+            width: 42vw;
+            height: auto;
+            margin-bottom: 1rem;
+            min-width: 290px;
+        }
+    }
+
 
     .contacto_main {
         display: flex;
