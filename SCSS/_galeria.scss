@@ -1,0 +1,27 @@
+.galeria_main {
+    display: flex;
+    flex-direction: column;
+
+    .galeria_img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 2rem;
+        list-style: none;
+
+        li img {
+            width: 350px;
+            height: auto;
+            margin: 6px;
+            margin-bottom: 1rem;
+
+            @media (max-width: 787px) {
+                width: 80vw;
+                height: auto;
+                margin-bottom: 1rem;
+                min-width: 290px;
+
+            }
+        }
+    }
+}

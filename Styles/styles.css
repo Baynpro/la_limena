@@ -493,9 +493,6 @@ section {
         gap: 2rem;
         padding: 2rem 2rem;
     }
-
-
-
 }
 
 
@@ -570,12 +567,12 @@ section {
 
 
 
-.contacto ul li.texto a {
+/* .contacto ul li.texto a {
     color: #5F6629;
     text-decoration: underline;
     font-weight: 200;
 
-}
+} */
 
 .productos_main {
     display: flex;

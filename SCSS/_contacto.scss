@@ -1,0 +1,72 @@
+.contacto_main {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem 2rem;
+
+    @media (max-width: 787px) {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+        padding: 2rem 2rem;
+    }
+
+    .contacto_mapa iframe {
+        width: 60vw;
+        max-width: 650px;
+        height: auto;
+        min-height: 400px;
+
+        @media (max-width: 787px) {
+            width: 80vw;
+            height: 40vh;
+            min-height: 220px;
+        }
+    }
+
+    .contacto_textos {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        vertical-align: top;
+        max-width: 330px;
+
+        h2 {
+            padding-top: 0;
+        }
+
+        .datos_contacto {
+            margin-bottom: 2rem;
+
+            ul {
+                padding-left: 1rem;
+
+                li {
+                    list-style-type: none;
+                    text-decoration: none;
+                    color: #5F6629;
+
+                    a {
+                        margin-bottom: 6px;
+                        text-decoration: none;
+                        text-decoration: underline;
+                        color: #5F6629;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .contacto_visitanos {
+            padding-left: 1rem;
+
+            a {
+                text-decoration: none;
+                text-decoration: underline;
+                color: #5F6629;
+                font-weight: 500;
+
+            }
+        }
+    }
+}
