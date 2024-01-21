@@ -21,7 +21,7 @@
             .carousel-item {
                 min-height: 300px;
 
-                .carousel-item img {
+                img {
                     position: relative;
                     overflow: hidden;
                     min-height: 300px;
@@ -30,18 +30,17 @@
                     object-fit: cover;
                     object-position: bottom;
                     filter: brightness(85%);
+                }
 
-                    @media (max-width: 420px) {
-                        .carousel-item img {
-                            max-height: 50vh;
-
-                        }
-
+                @media (max-width: 420px) {
+                    img {
+                        max-height: 50vh;
                     }
                 }
             }
         }
     }
+
 
     .text_hero {
         position: absolute;
@@ -53,66 +52,60 @@
         color: #BDC459;
 
         @media (max-width: 768px) {
-            .text_hero {
-                font-size: 32px;
-                padding: 12% 20vw;
-
-            }
-
-            @media (max-width: 599px) {
-                .text_hero {
-                    display: none;
-                }
-            }
-        }
-
-        .text_sm {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
+            font-size: 32px;
             padding: 12% 20vw;
-
-            .text_hero_sm {
-                overflow: hidden;
-                width: auto;
-                font-size: 26px;
-                padding: 0 0;
-                color: #BDC459;
-
-                @media (min-width: 600px) {
-                    .text_sm {
-                        display: none;
-
-                    }
-                }
-            }
         }
 
-        .whatsapp_button {
-            margin-top: 35%;
-            display: inline-block;
-            position: absolute;
-            background-color: #E6772F;
-            color: white;
-            padding: 2vh 4vw;
-            border-radius: 1px;
-            text-decoration: none;
-            font-size: 1.5vw;
-            font-weight: 500;
-
-            @media (max-width: 760px) {
-                .whatsapp_button {
-                    font-size: 10px;
-                    padding: 9px 22px;
-                    margin-top: 35%;
-                }
-
-                &hover {
-                    background-color: #9b4d19;
-                }
-            }
+        @media (max-width: 599px) {
+            display: none;
         }
     }
+
+    .text_sm {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        padding: 12% 20vw;
+
+        @media (min-width: 600px) {
+            display: none;
+        }
+
+        .text_hero_sm {
+            overflow: hidden;
+            width: auto;
+            font-size: 26px;
+            padding: 0 0;
+            color: #BDC459;
+
+        }
+    }
+
+    .whatsapp_button {
+        margin-top: 32%;
+        display: inline-block;
+        position: absolute;
+        background-color: #E6772F;
+        color: white;
+        padding: 2vh 4vw;
+        border-radius: 1px;
+        text-decoration: none;
+        font-size: 1.5vw;
+        font-weight: 500;
+
+        &:hover {
+            background-color: #9b4d19;
+        }
+    }
+
+    @media (max-width: 760px) {
+        .whatsapp_button {
+            font-size: 10px;
+            padding: 9px 22px;
+            margin-top: 35%;
+        }
+    }
+
 }
 
 .bajada {
@@ -121,37 +114,34 @@
     padding: 4rem 3rem 2rem 3rem;
     align-content: center;
 
-    .bajada h3 {
+    h3 {
         margin-bottom: 1rem;
         font-weight: 400;
         max-width: 85vw;
         padding-left: 2rem;
 
         @media (max-width: 760px) {
-            .bajada h3 {
-                font-size: 16px;
-                font-weight: 400;
 
-            }
-
+            font-size: 16px;
+            font-weight: 400;
         }
+    }
 
-        .video {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-bottom: 2rem;
+    .video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2rem;
 
-            .video iframe {
-                width: 97vw;
-                max-width: 900px;
-                height: calc(100vw * 9 / 16);
-                max-height: 520px;
-                border: none;
-                overflow: visible;
-                padding: 8px;
+        iframe {
+            width: 97vw;
+            max-width: 900px;
+            height: calc(100vw * 9 / 16);
+            max-height: 520px;
+            border: none;
+            overflow: visible;
+            padding: 8px;
 
-            }
         }
     }
 }
