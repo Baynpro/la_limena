@@ -1,9 +1,13 @@
+%size100 {
+    width: 100%;
+    height: 100%;
+}
+
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    @extend %size100;
     max-width: inherit;
 
     .carousel {
@@ -13,8 +17,7 @@
         height: auto;
 
         .carousel-inner {
-            width: 100%;
-            height: 100%;
+            @extend %size100;
             max-height: 600px;
             border: none;
 
@@ -25,8 +28,7 @@
                     position: relative;
                     overflow: hidden;
                     min-height: 300px;
-                    width: 100%;
-                    height: 100%;
+                    @extend %size100;
                     object-fit: cover;
                     object-position: bottom;
                     filter: brightness(85%);
@@ -49,7 +51,7 @@
         width: auto;
         overflow: hidden;
         padding-top: 18%;
-        color: #BDC459;
+        color: $lightgreen;
 
         @media (max-width: 768px) {
             font-size: 32px;
@@ -76,7 +78,7 @@
             width: auto;
             font-size: 26px;
             padding: 0 0;
-            color: #BDC459;
+            color: $lightgreen;
 
         }
     }
@@ -85,7 +87,7 @@
         margin-top: 32%;
         display: inline-block;
         position: absolute;
-        background-color: #E6772F;
+        background-color: $lightorange;
         color: white;
         padding: 2vh 4vw;
         border-radius: 1px;
@@ -94,7 +96,7 @@
         font-weight: 500;
 
         &:hover {
-            background-color: #9b4d19;
+            background-color: $darkorange;
         }
     }
 

@@ -5,7 +5,7 @@
 }
 
 h1 {
-    color: #5F6629;
+    color: $textos;
     width: 98%;
     text-align: center;
     font-size: 36px;
@@ -22,7 +22,7 @@ h1 {
 h2 {
     display: flex;
     align-items: center;
-    color: #5F6629;
+    color: $textos;
     font-size: 24px;
     font-weight: 600;
     padding-top: 4rem;
@@ -30,7 +30,7 @@ h2 {
 }
 
 h3 {
-    color: #5F6629;
+    color: $textos;
     font-size: 20px;
     line-height: 1.5;
     font-weight: 400;
@@ -38,7 +38,7 @@ h3 {
 }
 
 p {
-    color: #5F6629;
+    color: $textos;
     font-size: 20px;
 
 }
@@ -49,7 +49,7 @@ header {
     position: static;
     width: 100vw;
     max-height: 100px;
-    background-color: #818944;
+    background-color: $darkgreen;
     border-bottom: 1px solid #a3a592;
     box-shadow: 0px 2px 4px 0px rgba(199, 206, 195, 0.758);
 
@@ -64,9 +64,13 @@ header {
     max-height: inherit;
 
     .container-fluid {
-        padding: 0 8vw;
+        padding: 0 0vw;
 
-        .navbar-brand img {
+        .navbar-brand {
+            margin-left: 5%;
+        }
+
+        img {
             height: 9vh;
             max-height: inherit;
             vertical-align: middle;
@@ -86,10 +90,10 @@ header {
             .menuhamb {
                 width: 32px;
                 height: 32px;
-                fill: #BDC459;
+                fill: $lightgreen;
 
                 &:focus {
-                    fill: #ff7f50;
+                    fill: $darkorange;
                 }
 
                 @media (max-width: 480px) {
@@ -104,21 +108,21 @@ header {
             width: 200px;
 
             .offcanvas-header {
-                background-color: #5F6629;
+                background-color: $darkgreen;
                 padding-right: 2rem;
 
                 .btn-close {
-                    --bs-btn-close-color: #BDC459;
+                    --bs-btn-close-color: $lightgreen;
 
                 }
 
                 .offcanvas-title {
-                    color: #BDC459;
+                    color: $lightgreen;
                 }
             }
 
             .offcanvas-body {
-                background-color: #818944;
+                background-color: $darkgreen;
 
             }
         }
@@ -132,18 +136,18 @@ header {
 
                 .nav-link {
                     text-decoration: none;
-                    color: #BDC459;
+                    color: $lightgreen;
                     font-size: 16px;
                     font-weight: 300;
 
                     &.active {
-                        color: #ff7f50;
+                        color: $lightorange;
                         font-weight: 400;
                         font-size: 16px;
                     }
 
                     &:hover {
-                        color: #ff7f50;
+                        color: $darkorange;
                         font-weight: 400;
                     }
 
@@ -169,7 +173,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #BDC459;
+    background-color: $lightgreen;
     z-index: -1;
 }
 
@@ -195,7 +199,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: start;
-    background-color: #818944;
+    background-color: $darkgreen;
     width: 100vw;
     height: 400px;
 
@@ -221,7 +225,7 @@ footer {
 
                 a {
                     text-decoration: underline;
-                    color: #BDC459;
+                    color: $lightgreen;
                     font-size: 18px;
                     font-weight: 300;
                     padding-left: 64px;
@@ -255,7 +259,7 @@ footer {
 
                     a {
                         text-decoration: underline;
-                        color: #BDC459;
+                        color: $lightgreen;
                         font-size: 14px;
                         font-weight: 300;
                         padding-left: 16px;
@@ -273,7 +277,7 @@ footer {
 
         span {
             margin-top: 2rem;
-            color: #BDC459;
+            color: $lightgreen;
         }
 
         @media (min-width:600px) {

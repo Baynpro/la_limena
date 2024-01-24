@@ -10,10 +10,12 @@
         padding: 0;
         gap: 0rem;
     }
+
     h3 {
         margin-bottom: 2rem;
-    
+
     }
+
     img {
         width: 36vw;
         height: calc(48vw * 9 / 16);
@@ -61,8 +63,8 @@
                     text-align: center;
                 }
             }
+
             .whatsapp_button_prod {
-                /* display: inline-block; */
                 background-color: #E6772F;
                 color: white;
                 padding: 20px 40px;
@@ -73,6 +75,7 @@
                 font-weight: bold;
                 max-width: 305px;
                 width: auto;
+
                 &:hover {
                     background-color: #9b4d19;
                 }
