@@ -3,6 +3,20 @@
     height: 100%;
 }
 
+@keyframes pulse {
+
+    0%, 50%,
+    100% {
+        transform: scale(1);
+    }
+
+    25%, 75% {
+        transform: scale(1.05);
+    }
+}
+
+
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -94,17 +108,25 @@
         text-decoration: none;
         font-size: 1.5vw;
         font-weight: 500;
+        animation-name: pulse;
+        animation-duration: 0.25s;
+        animation-delay: 4s;
+        animation-iteration-count: 2;
+        animation-fill-mode: forwards;
+        transition: 100ms;
 
         &:hover {
             background-color: $darkorange;
+            transform: scale(1.1, 1.1)
         }
+
     }
 
     @media (max-width: 760px) {
         .whatsapp_button {
             font-size: 10px;
             padding: 9px 22px;
-            margin-top: 35%;
+            margin-top: 39%;
         }
     }
 

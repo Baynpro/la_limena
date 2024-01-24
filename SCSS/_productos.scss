@@ -64,6 +64,18 @@
                 }
             }
 
+            @keyframes pulse {
+
+                0%,
+                100% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.05);
+                }
+            }
+
             .whatsapp_button_prod {
                 background-color: #E6772F;
                 color: white;
@@ -75,6 +87,11 @@
                 font-weight: bold;
                 max-width: 305px;
                 width: auto;
+                animation-name: pulse;
+                animation-duration: 0.3s; 
+                animation-delay: 4s; 
+                animation-iteration-count: 2; 
+                animation-fill-mode: forwards; 
 
                 &:hover {
                     background-color: #9b4d19;
