@@ -219,11 +219,12 @@ footer .footer_content ul li a {
     text-decoration: none;
     padding-top: 0px;
     padding-left: 1rem;
+    margin-bottom: 3rem;
   }
   footer .footer_content ul li {
     list-style-type: none;
     margin-left: 0;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
   }
   footer .footer_content ul li a {
     text-decoration: underline;
