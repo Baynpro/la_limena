@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../Styles/estilos.css">
     <meta name="robots" content="index, follow">
     <meta name="description"
@@ -62,7 +63,8 @@
     <main>
         <h1>Productos</h1>
         <section class="productos_main">
-            <div class="productos_lote">
+            <div class="productos_lote" data-aos="zoom-in" data-aos-easing="linear"
+            data-aos-duration="500">
                 <div><img src="../Multimedia/ingreso.webp" alt="vista de lotes"></div>
                 <div class="product_tx_btn">
                     <div class="product_txt">
@@ -73,7 +75,8 @@
                     <a href="https://wa.link/p2cb5n" class="whatsapp_button_prod">QUIERO MÁS INFORMACIÓN</a>
                 </div>
             </div>
-            <div class="productos_lote">
+            <div class="productos_lote" data-aos="zoom-in" data-aos-easing="linear"
+            data-aos-duration="500">
                 <div><img src="../Multimedia/Casa-propia (1).webp" alt="vista de casas"></div>
                 <div class="product_tx_btn">
                     <div class="product_txt">
@@ -94,7 +97,7 @@
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="#">Productos</a></li>
-                    <li><a href="./master-plan.html">Master Plan</a></li>
+                    <li><a href="./Productos.html">Master Plan</a></li>
                     <li><a href="./galeria.html">Galeria</a></li>
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
@@ -108,6 +111,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
