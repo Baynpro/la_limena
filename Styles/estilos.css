@@ -551,6 +551,7 @@ footer .disclaimer span {
   }
 }
 .master_main .master_img img {
+  margin-bottom: 2rem;
   width: 70vw;
   margin-left: 1rem;
   max-width: 730px;

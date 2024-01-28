@@ -13,26 +13,33 @@
         vertical-align: top;
     }
 
-    .master_img img {
-        width: 70vw;
-        margin-left: 1rem;
-        max-width: 730px;
+    .master_img {
 
-        &:hover {
-            transform: scale(1.05, 1.05);
-            transition: ease-in-out 200ms;
-        }
+        img {
+            margin-bottom: 2rem;
 
-        @media (max-width: 1020px) {
-            max-width: 830px;
-            width: 86vw;
+            width: 70vw;
+            margin-left: 1rem;
+            max-width: 730px;
+
             &:hover {
                 transform: scale(1.05, 1.05);
                 transition: ease-in-out 200ms;
             }
-        }
 
+            @media (max-width: 1020px) {
+                max-width: 830px;
+                width: 86vw;
+
+                &:hover {
+                    transform: scale(1.05, 1.05);
+                    transition: ease-in-out 200ms;
+                }
+            }
+        }
     }
+
+
 
     .master_text {
         display: flex;
