@@ -8,29 +8,29 @@
         justify-content: space-evenly;
         padding: 2rem;
         list-style: none;
-    
+
         li {
             width: 350px;
-            height: 350px; /* Asegura que los li sean cuadrados */
+            height: 350px;
             margin: 6px;
-            overflow: hidden; /* Esconde cualquier parte de la imagen que se salga del cuadrado */
-    
+            overflow: hidden;
+
             img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover; /* Asegura que la imagen se cubra sin distorsionarse */
-                object-position: center; /* Centra la imagen */
+                object-fit: cover;
+                object-position: center;
             }
         }
-    
+
         @media (max-width: 787px) {
             li {
                 width: 80vw;
-                height: 80vw; /* Mantiene la proporción cuadrada */
+                height: 80vw;
                 min-width: 290px;
                 min-height: 290px;
             }
         }
     }
-    
+
 }
