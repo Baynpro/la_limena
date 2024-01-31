@@ -77,7 +77,7 @@
             }
 
             .whatsapp_button_prod {
-                background-color: #E6772F;
+                background-color: $lightorange;
                 color: white;
                 padding: 20px 40px;
                 border-radius: 1px;
@@ -94,7 +94,7 @@
                 animation-fill-mode: forwards;
 
                 &:hover {
-                    background-color: #9b4d19;
+                    background-color: $darkorange;
                 }
             }
         }
